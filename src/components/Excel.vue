@@ -25,7 +25,7 @@
       <tr  v-for="(data, id) in datas" :key="id">
         <td><button class="btn btn-update" v-on:click="update_item(data.id, data.content)" >Update</button></td>
         <td><button class="btn btn-delete" v-on:click="delete_item(data.id)">Delete</button></td>
-        <td v-for="content in data.content" :key="content">{{content}}</td>
+        <td v-for="column in columns" :key="column.name">{{data.content[column.name]}}</td>
       </tr>
    </table>
    <div class="json_editor" v-if="display_add">
