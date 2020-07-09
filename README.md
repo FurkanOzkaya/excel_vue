@@ -14,6 +14,16 @@ These  values is seperate for all request. [Bad practice] :)
 
 Feel free to improve.
 
+## Docker Instalation
+
+```
+docker build -t excel_vue .
+```
+
+```
+docker run -p 8080:80 excel_vue
+```
+
 ## Project setup
 ```
 npm install
